@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containera">
+        <div class="carda">
+            <span></span>
+            <div class="imgBxa"><img src="Demon-Slayer-Logo.png"></div>
+            <div class="contenta">
+                <div>
+                    <h2>About Demon-Slayer</h2>
+                    <p>Lorem ipsum dolor,sit amet consectetur adipisicing elit.
+                        Labore totam, explicabo sed quod deleniti quibusdam quaerat reiciendis, qui,
+                        ipsum voluptatibus nisi excepturi iure rem quae quo molestias aut nostrum.
+                        Obcaecati?</p>
+                </div>
+            </div>
+        </div>
+<!-- carda 2 about -->
+        <div class="carda">
+            <span></span>
+            <div class="imgBxa"><img src="Demon-Slayer-Logo.png"></div>
+            <div class="contenta">
+                <div>
+                    <h2>About Demon-Slayer</h2>
+                    <p>Lorem ipsum dolor,sit amet consectetur adipisicing elit.
+                        Labore totam, explicabo sed quod deleniti quibusdam quaerat reiciendis, qui,
+                        ipsum voluptatibus nisi excepturi iure rem quae quo molestias aut nostrum.
+                        Obcaecati?</p>
+                </div>
+            </div>
+        </div>
+<!-- card 2 about -->
+        <div class="carda">
+            <span></span>
+            <div class="imgBxa"><img src="Demon-Slayer-Logo.png"></div>
+            <div class="contenta">
+                <div>
+                    <h2>About Demon-Slayer</h2>
+                    <p>Lorem ipsum dolor,sit amet consectetur adipisicing elit.
+                        Labore totam, explicabo sed quod deleniti quibusdam quaerat reiciendis, qui,
+                        ipsum voluptatibus nisi excepturi iure rem quae quo molestias aut nostrum.
+                        Obcaecati?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carda').on('mouseenter', function(e){
+                x = e.pageX - $(this).offset().left,
+                y = e.pageY - $(this).offset().top;
+                $(this).find('span').css({top:y , left:x});
+            })
+            $('.carda').on('mouseout', function(e){
+                x = e.pageX - $(this).offset().left,
+                y = e.pageY - $(this).offset().top;
+                $(this).find('span').css({top:y , left:x});
+            })
+        })
+    </script>
+</body>
+</html>
